@@ -1,0 +1,26 @@
+body {
+    background: #f1f1f1;
+    color: #444;
+}
+#header-nav {
+    background: rgb(105, 0, 61);
+    border-radius: 0;
+    border: 0;
+}
+
+#header-nav ul li a {
+    background: #f1f1f1;
+    color: #ddd;
+    font-weight: 500;
+    border-bottom: 4px solid transparent;
+}
+#header-nav ul li a:hover {
+    color: rgb(255, 166, 0);
+    border-bottom: 4px solid rgb(255, 166, 0);
+}
+#header-nav ul li a:visited {
+    background: rgb(105, 0, 61) !important;
+}
+#header-nav ul li a:focus {
+    background: #f1f1f1;
+}
