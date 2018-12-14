@@ -1,0 +1,27 @@
+<div class="col-md-9 fade-in one">
+    <div class="section" id="sec-sobre" ng-show="isSobre">
+        <span class="banner">Componentes</span>
+        <div class="text text-muted">
+            <p>Frontend</p>
+            <p>
+                Os componentes de tela desenvolvidos utilizam as seguintes tecnologias:
+            </p>
+            <ul>
+                <li>EcmaScript6 (Javascript)</li>
+                <li>AngularJS</li>
+                <li>HTML5</li>
+                <li>CSS3</li>
+            </ul>
+            <p>
+                Os componentes desenvolvidos podem utilizar as tecnologias acima mencionadas em conjunto
+                ou de forma isolada.
+            </p>
+        </div>
+    </div>
+</div>
+<div class="col-md-3 fade-in one">
+    <ul class="sidemenu staatliches">
+        <li><a href="" ng-class="{'link-active': isSobre}" ng-click="display('sobre')">Frontend</a></li>
+        <li><a href="" ng-click="display('comoutilizar')">Backend</a></li>
+    </ul>
+</div>

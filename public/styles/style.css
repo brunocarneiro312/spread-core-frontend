@@ -1,5 +1,5 @@
 body {
-    background: #f1f1f1;
+    background: #eee;
     color: #444;
 }
 #header-nav {
@@ -7,12 +7,12 @@ body {
     border-radius: 0;
     border: 0;
 }
-
 #header-nav ul li a {
-    background: #f1f1f1;
+    background: rgb(105, 0, 61);
     color: #ddd;
     font-weight: 500;
     border-bottom: 4px solid transparent;
+    transition: all .3s;
 }
 #header-nav ul li a:hover {
     color: rgb(255, 166, 0);
@@ -23,4 +23,90 @@ body {
 }
 #header-nav ul li a:focus {
     background: #f1f1f1;
+}
+#content-holder {
+
+}
+.banner {
+    font-size: 4em;
+    font-family: 'Staatliches', cursive;
+}
+.topic {
+    font-size: 2em;
+    font-family: 'Staatliches', cursive;
+}
+.text {
+    font-size:1.7em;
+    font-family: 'Noto Serif SC', serif;
+    color: black;
+}
+.navbar {
+    font-size: 1.3em;
+}
+.navbar-brand {
+    color: rgb(234, 175, 61) !important;
+    font-size: 1.3em !important;
+}
+.staatliches {
+    font-family: 'Staatliches', cursive;
+}
+.sidemenu {
+    font-size: 1.5em;
+    list-style: none;
+    position: fixed;
+}
+.sidemenu li a {
+    color: rgba(0, 0, 0, .5);
+    border-left: 4px solid transparent;
+    padding: 2.5px 5px;
+    transition: all .3s;
+}
+.sidemenu li a:hover {
+    color: rgb(234, 175, 61);
+    border-left: 4px solid rgb(234, 175, 61);
+    text-decoration: none;
+}
+.sidemenu li a:focus {
+    color: rgb(234, 175, 61);
+    border-left: 4px solid rgb(234, 175, 61);
+    text-decoration: none;
+}
+.section {
+
+}
+.section:first-child {
+    margin-top: 0;
+}
+.lobster {
+    font-family: 'Lobster', cursive;
+}
+.link-active {
+    color: rgb(234, 175, 61) !important;
+    border-left: 4px solid rgb(234, 175, 61) !important;
+    text-decoration: none !important;
+}
+
+@-webkit-keyframes fadeIn { from { opacity:0; } to { opacity:1; } }
+@-moz-keyframes fadeIn { from { opacity:0; } to { opacity:1; } }
+@keyframes fadeIn { from { opacity:0; } to { opacity:1; } }
+
+.fade-in {
+    opacity:0;  /* make things invisible upon start */
+    -webkit-animation:fadeIn ease-in .3s;  /* call our keyframe named fadeIn, use animattion ease-in and repeat it only 1 time */
+    -moz-animation:fadeIn ease-in .3s;
+    animation:fadeIn ease-in .3s;
+
+    -webkit-animation-fill-mode:forwards;  /* this makes sure that after animation is done we remain at the last keyframe value (opacity: 1)*/
+    -moz-animation-fill-mode:forwards;
+    animation-fill-mode:forwards;
+
+    -webkit-animation-duration:.3s;
+    -moz-animation-duration:.3s;
+    animation-duration:.3s;
+}
+
+.fade-in.one {
+    -webkit-animation-delay: .3s;
+    -moz-animation-delay: .3s;
+    animation-delay: .3s;
 }

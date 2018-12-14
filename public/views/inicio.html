@@ -1,0 +1,41 @@
+<div class="col-md-9 fade-in one">
+    <div class="section" id="sec-sobre" ng-show="isSobre">
+        <span class="banner">Sobre</span>
+        <div class="text text-muted">
+            <p>Bem vindo!</p>
+            <p>
+                Essa aplicação tem como objetivo concentrar os componentes desenvolvidos pela Spread com o objetivo
+                de reaproveitá-los.
+            </p>
+        </div>
+    </div>
+
+    <div class="section" id="sec-como-utilizar" ng-show="isComoUtilizar">
+        <span class="banner">Como Utilizar</span>
+        <div class="text text-muted">
+            <p>Bem vindo!</p>
+            <p>
+                Essa aplicação tem como objetivo concentrar os componentes desenvolvidos pela Spread com o objetivo
+                de reaproveitá-los.
+            </p>
+        </div>
+    </div>
+
+    <div class="section" id="sec-criando-componente" ng-show="isCriandoComponente">
+        <span class="banner">Criando Componente</span>
+        <div class="text text-muted">
+            <p>Bem vindo!</p>
+            <p>
+                Essa aplicação tem como objetivo concentrar os componentes desenvolvidos pela Spread com o objetivo
+                de reaproveitá-los.
+            </p>
+        </div>
+    </div>
+</div>
+<div class="col-md-3 fade-in one">
+    <ul class="sidemenu staatliches">
+        <li><a href="" ng-class="{'link-active': isSobre}" ng-click="display('sobre')">Sobre</a></li>
+        <li><a href="" ng-click="display('comoutilizar')">Como utilizar</a></li>
+        <li><a href="" ng-click="display('criandocomponente')">Criando componente</a></li>
+    </ul>
+</div>

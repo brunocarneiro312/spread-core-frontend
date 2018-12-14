@@ -77,6 +77,8 @@
     gulp.task('pack.vendor', function() {
         gulp.src([
             './node_modules/angular/angular.js',
+            './node_modules/angular-route/angular-route.js',
+            './node_modules/angular-animate/angular-animate.js',
             './node_modules/jquery/public/jquery.js'
         ])
             .pipe(concat('bundle.js'))
@@ -93,9 +95,17 @@
      */
     gulp.task('pack.view', function () {
 
-        /** Overlay */
-        // gulp.src('app/components/overlay/template/overlay.html')
-        //     .pipe(gulp.dest('./public/views'));
+        /** inicio */
+        gulp.src('app/views/inicio.html')
+            .pipe(gulp.dest('./public/views/'));
+
+        /** componentes */
+        gulp.src('app/views/componentes.html')
+            .pipe(gulp.dest('./public/views/'));
+
+        /** interfaces */
+        gulp.src('app/views/interfaces.html')
+            .pipe(gulp.dest('./public/views/'));
 
         /** css */
         gulp.src('app/components/**/*.css')
