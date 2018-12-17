@@ -1,3 +1,30 @@
 .spread-accordion {
-    
+
+}
+.spread-accordion ul {
+    list-style: none;
+    padding: 0;
+    box-shadow: 0 2px 3px #ddd;
+}
+.spread-accordion ul li {
+    padding: 5px;
+    border: 1px solid #ddd;
+    border-bottom: 0;
+    font-size: 0.7em;
+}
+.spread-accordion ul li:last-child {
+    padding: 5px;
+    border-bottom: 1px solid #ddd;
+}
+.spread-accordion ul li:hover {
+
+}
+.spread-overlay {
+    top: 0;
+    left: 0;
+    background: rgba(0 ,0 ,0 , .65);
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    z-index: 9999;
 }

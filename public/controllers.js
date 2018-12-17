@@ -132,18 +132,67 @@
 
     function SpreadAccordionController($scope)
     {
-        $scope.debug = true;
-        $scope.itens = []; // Armazena cada elemento presente no accordion
+        $scope.debug           = true;
+        $scope.itens           = []; // Armazena cada elemento presente no accordion
+        $scope.selectedElement = undefined;
+
+        $scope.toggle     = toggle;
+        $scope.isSelected = isSelected;
 
         function init()
         {
             if ($scope.debug)
             {
                 $scope.itens.push('menu1', 'menu2', 'menu3');
-                console.log($scope.itens);
             }
         }
         init();
+
+        function toggle(listItem)
+        {
+            $scope.selectedElement = listItem;
+        }
+
+        function isSelected(listItem)
+        {
+            return $scope.selectedElement === listItem;
+        }
+    }
+})();
+(function() {
+    'use strict';
+
+    angular.module('spread.overlay.module')
+        .controller('SpreadOverlayController', SpreadOverlayController);
+
+    function SpreadOverlayController($scope)
+    {
+        $scope.isOverlay = undefined;
+
+        $scope.applyOverlay  = applyOverlay;
+        $scope.removeOverlay = removeOverlay;
+        $scope.toggleOverlay = toggleOverlay;
+
+        function init()
+        {
+
+        }
+        init();
+
+        function applyOverlay()
+        {
+            $scope.isOverlay = true;
+        }
+
+        function removeOverlay()
+        {
+            $scope.isOverlay = false;
+        }
+
+        function toggleOverlay()
+        {
+            $scope.isOverlay = !$scope.isOverlay;
+        }
     }
 })();
 (function () {

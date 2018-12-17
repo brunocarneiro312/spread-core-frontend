@@ -110,7 +110,9 @@
         /** accordion */
         gulp.src('app/components/accordion/views/accordion.html')
             .pipe(gulp.dest('./public/views/'));
-        gulp.src('app/components/accordion/views/accordion-element.html')
+
+        /** overlay */
+        gulp.src('app/components/overlay/views/overlay.html')
             .pipe(gulp.dest('./public/views/'));
 
         /** css */

@@ -1,3 +1,8 @@
 <div class="spread-accordion">
-    accordion
+    <ul>
+        <li ng-repeat="element in itens" ng-click="toggle($index)">
+            {{element}}
+            <div ng-show="isSelected($index)">Conteúdo</div>
+        </li>
+    </ul>
 </div>

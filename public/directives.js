@@ -2,32 +2,33 @@
     'use strict';
 
     angular.module('spread.accordion.module')
-        .directive('spreadAccordionElement', spreadAccordionElement);
+        .directive('spreadAccordion', spreadAccordion);
 
-    function spreadAccordionElement() {
+    function spreadAccordion() {
         return {
             restrict: 'E',
-            templateUrl: '/views/accordion-element.html',
             scope: {
 
-            }
+            },
+            templateUrl: '/views/accordion.html',
+            controller: 'SpreadAccordionController',
         }
     }
 })();
 (function() {
     'use strict';
 
-    angular.module('spread.accordion.module')
-        .directive('spreadAccordion', spreadAccordion);
+    angular.module('spread.overlay.module')
+        .directive('spreadOverlay', spreadOverlay);
 
-    function spreadAccordion() {
+    function spreadOverlay()
+    {
         return {
-            restrict: 'E',
-            transclude: true,
+            templateUrl: '/views/overlay.html',
+            controller: 'SpreadOverlayController',
             scope: {
-
+                isOverlay: '='
             },
-            templateUrl: '/views/accordion.html',
         }
     }
 })();

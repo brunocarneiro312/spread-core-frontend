@@ -8,7 +8,8 @@
         'ngAnimate',
 
         // App
-        'spread.accordion.module'
+        'spread.accordion.module',
+        'spread.overlay.module',
 
     ]).config(function($routeProvider) {
         $routeProvider
@@ -32,6 +33,14 @@
     'use strict';
 
     angular.module('spread.accordion.module', [
+
+    ]);
+
+})();
+(function() {
+    'use strict';
+
+    angular.module('spread.overlay.module', [
 
     ]);
 
