@@ -93,7 +93,7 @@
      * pack.view
      * ---------
      */
-    gulp.task('pack.view', function () {
+    gulp.task('pack.view', function() {
 
         /** inicio */
         gulp.src('app/views/inicio.html')
@@ -105,6 +105,12 @@
 
         /** interfaces */
         gulp.src('app/views/interfaces.html')
+            .pipe(gulp.dest('./public/views/'));
+
+        /** accordion */
+        gulp.src('app/components/accordion/views/accordion.html')
+            .pipe(gulp.dest('./public/views/'));
+        gulp.src('app/components/accordion/views/accordion-element.html')
             .pipe(gulp.dest('./public/views/'));
 
         /** css */

@@ -124,6 +124,28 @@
         init();
     }
 })();
+(function() {
+    'use strict';
+
+    angular.module('spread.accordion.module')
+        .controller('SpreadAccordionController', SpreadAccordionController);
+
+    function SpreadAccordionController($scope)
+    {
+        $scope.debug = true;
+        $scope.itens = []; // Armazena cada elemento presente no accordion
+
+        function init()
+        {
+            if ($scope.debug)
+            {
+                $scope.itens.push('menu1', 'menu2', 'menu3');
+                console.log($scope.itens);
+            }
+        }
+        init();
+    }
+})();
 (function () {
     'use strict';
 

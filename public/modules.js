@@ -2,8 +2,14 @@
     'use strict';
 
     angular.module('sandbox.module', [
+
+        // Vendors
         'ngRoute',
-        'ngAnimate'
+        'ngAnimate',
+
+        // App
+        'spread.accordion.module'
+
     ]).config(function($routeProvider) {
         $routeProvider
             .when("/", {
@@ -20,6 +26,14 @@
             })
             .otherwise("/");
     });
+
+})();
+(function() {
+    'use strict';
+
+    angular.module('spread.accordion.module', [
+
+    ]);
 
 })();
 (function() {
