@@ -108,6 +108,12 @@
             }
         }
 
+        /**
+         * ------------------------------------------
+         * Copia para o clipboard o texto do elemento
+         * ------------------------------------------
+         * @param id: id do componente
+         */
         function copy(id)
         {
             var copyText = document.getElementById(id);

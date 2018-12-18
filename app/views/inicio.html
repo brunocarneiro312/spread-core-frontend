@@ -1,5 +1,5 @@
 <div class="col-md-9 fade-in one">
-    <div class="section" id="sec-sobre" ng-show="isSobre">
+    <div class="section" id="sec-sobre">
         <span class="banner">Sobre</span>
         <div class="text text-muted">
             <p class="subtopic orange">Bem vindo!</p>
@@ -40,7 +40,7 @@
         </div>
     </div>
 
-    <div class="section" id="sec-criando-componente" ng-show="isCriandoComponente">
+    <div class="section" id="sec-criando-componente">
         <span class="banner">Criando Componente</span>
         <div class="text text-muted">
             <p class="subtopic orange">Criando Componente</p>
@@ -80,8 +80,8 @@
 </div>
 <div class="col-md-3 fade-in one">
     <ul class="sidemenu staatliches">
-        <li><a href="" ng-class="{'link-active': isSobre}" ng-click="display('sobre')">Sobre</a></li>
-        <li><a href="" ng-click="display('comoutilizar')">Como utilizar</a></li>
-        <li><a href="" ng-click="display('criandocomponente')">Criando componente</a></li>
+        <li><a href="#sec-sobre" ng-class="{'link-active': isSobre}">Sobre</a></li>
+        <li><a href="#sec-como-utilizar">Como utilizar</a></li>
+        <li><a href="#sec-criando-componente">Criando componente</a></li>
     </ul>
 </div>
