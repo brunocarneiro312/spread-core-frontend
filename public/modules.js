@@ -40,7 +40,23 @@
 (function() {
     'use strict';
 
+    angular.module('spread.carousel.module', [
+
+    ]);
+
+})();
+(function() {
+    'use strict';
+
     angular.module('spread.overlay.module', [
+
+    ]);
+
+})();
+(function() {
+    'use strict';
+
+    angular.module('spread.table.module', [
 
     ]);
 
