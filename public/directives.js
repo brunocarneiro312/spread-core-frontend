@@ -52,3 +52,36 @@
         }
     }
 })();
+(function() {
+    'use strict';
+
+    angular.module('spread.table.module')
+        .directive('spreadTable', spreadTable);
+
+    function spreadTable()
+    {
+        return {
+            template: '<h2>Table</h2>',
+            scope: {
+
+            }
+        }
+    }
+})();
+(function() {
+    'use strict';
+
+    angular.module('spread.modal.module')
+        .directive('spreadModal', spreadModal);
+
+    function spreadModal() 
+    {
+        return {
+            restrict: 'E',
+            template: '<h2>Modal</h2>',
+            scope: {
+
+            }
+        }
+    }
+})();

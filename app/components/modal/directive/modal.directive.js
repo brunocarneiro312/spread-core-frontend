@@ -4,7 +4,7 @@
     angular.module('spread.modal.module')
         .directive('spreadModal', spreadModal);
 
-    function spreadModal() ]
+    function spreadModal()
     {
         return {
             restrict: 'E',

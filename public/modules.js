@@ -48,6 +48,14 @@
 (function() {
     'use strict';
 
+    angular.module('spread.modal.module', [
+
+    ]);
+    
+})();
+(function() {
+    'use strict';
+
     angular.module('spread.overlay.module', [
 
     ]);

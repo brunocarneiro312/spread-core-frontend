@@ -234,6 +234,21 @@
         }
     }
 })();
+(function() {
+    'use strict';
+
+    angular.module('spread.table.module')
+        .controller('SpreadTableController', SpreadTableController);
+
+    function SpreadTableController($scope)
+    {
+        function init()
+        {
+
+        }
+        init();
+    }
+})();
 (function () {
     'use strict';
 
@@ -250,4 +265,20 @@
         }
         init();
     }
+})();
+(function() {
+    'use strict';
+
+    angular.module('spread.modal.module')
+        .controller('SpreadModalController', SpreadModalController);
+
+    function SpreadModalController($scope)
+    {
+        function init()
+        {
+
+        }
+        init();
+    }
+
 })();
