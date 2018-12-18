@@ -80,7 +80,7 @@
         $scope.onload               = true;
 
         // Funções
-        $scope.display = display;
+        $scope.copy = copy;
 
         function init()
         {
@@ -106,6 +106,18 @@
             {
                 $scope.isCriandoComponente = true;
             }
+        }
+
+        function copy(id)
+        {
+            var copyText = document.getElementById(id);
+            var textarea = document.createElement("textarea");
+            textarea.value = copyText.textContent;
+            document.body.appendChild(textarea);
+            textarea.select();
+            document.execCommand("copy");
+            textarea.remove();
+            alert('texto copiado!');
         }
     }
 })();
@@ -138,6 +150,7 @@
 
         $scope.toggle     = toggle;
         $scope.isSelected = isSelected;
+        $scope.debug      = debug;
 
         function init()
         {
@@ -156,6 +169,11 @@
         function isSelected(listItem)
         {
             return $scope.selectedElement === listItem;
+        }
+
+        function debug()
+        {
+            console.log('OK');
         }
     }
 })();

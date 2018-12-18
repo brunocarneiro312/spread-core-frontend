@@ -10,6 +10,9 @@
             scope: {
 
             },
+            link: function(scope, element, attr, ctrl) {
+
+            },
             templateUrl: '/views/accordion.html',
             controller: 'SpreadAccordionController',
         }
