@@ -79,7 +79,8 @@
             './node_modules/angular/angular.js',
             './node_modules/angular-route/angular-route.js',
             './node_modules/angular-animate/angular-animate.js',
-            './node_modules/jquery/public/jquery.js'
+            './node_modules/bootstrap/dist/bootstrap.js',
+            './node_modules/jquery/dist/jquery.js',
         ])
             .pipe(concat('bundle.js'))
             .pipe(gulp.dest('./public/scripts/'));

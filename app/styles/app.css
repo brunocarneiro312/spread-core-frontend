@@ -11,11 +11,11 @@ pre {
     border: 0;
     border-left: 4px solid rgb(234, 175, 61);
 }
-pre .fa-copy {
+pre .fa-clone {
     color: #888888;
     cursor: pointer;
 }
-pre .fa-copy:hover {
+pre .fa-clone:hover {
     color: navy;
 }
 #header-nav {
