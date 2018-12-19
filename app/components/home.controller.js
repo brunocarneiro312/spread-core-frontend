@@ -7,11 +7,9 @@
     function HomeController($scope)
     {
         // Variáveis
-        $scope.showView             = undefined;
         $scope.isSobre              = undefined;
         $scope.isComoUtilizar       = undefined;
         $scope.isCriandoComponentes = undefined;
-        $scope.onload               = true;
 
         // Funções
         $scope.display = display;

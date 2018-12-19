@@ -1,87 +1,89 @@
-<div class="col-md-9 fade-in one">
-    <div class="section" id="sec-sobre">
-        <span class="banner">Sobre</span>
-        <div class="text text-muted">
-            <p class="subtopic orange">Bem vindo!</p>
-            <p>
-                Essa interface apresenta os componentes desenvolvidos e modularizados para
-                serem reaproveitados.
-            </p>
+<div ng-controller="HomeController">
+    <div class="col-md-9 fade-in one">
+        <div class="section" id="sec-sobre" ng-show="isSobre">
+            <span class="banner">Sobre</span>
+            <div class="text text-muted">
+                <p class="subtopic orange">Bem vindo!</p>
+                <p>
+                    Essa interface apresenta os componentes desenvolvidos e modularizados para
+                    serem reaproveitados.
+                </p>
+            </div>
         </div>
-    </div>
 
-    <div class="section" id="sec-como-utilizar" ng-controller="InicioController">
-        <span class="banner">Como Utilizar</span>
-        <div class="text text-muted">
-            <p class="subtopic orange">Instalação</p>
-            <p>
-                Os componentes podem ser baixados através do <span class="lobster"><a href="https://github.com/brunocarneiro312/spread-core-frontend" target="_blank">github <i class="fa fa-github-alt fa-fw"></i></a></span>.
-            </p>
-            <p>
-                Para clonar o repositório, siga os seguintes passos:
-            </p>
-            <ol class="steplist">
-                <li>Entre no prompt de comandos do Windows e navegue até o diretório onde o projeto será baixado
-                    <pre class="prestyle">(<i class="fa fa-windows fa-fw"></i> + r) <span id="copy1">cmd.exe</span><span class="pull-right" data-toggle="tooltip" data-placement="right" title="copiar"><i class="fa fa-clone fa-fw fa-lg" ng-click="copy('copy1')"></i></span></pre>
-                </li>
-                <li>Digite o comando:
-                    <pre class="prestyle"><span id="copy2">git clone https://github.com/brunocarneiro312/spread-core-frontend.git</span><span class="pull-right" data-toggle="tooltip" data-placement="right" title="copiar"><i class="fa fa-clone fa-fw fa-lg" ng-click="copy('copy2')"></i></span></pre>
-                </li>
-                <li>Após clonar o repositório, é necessário instalar as dependências:
-                    <pre class="prestyle"><span id="copy3">npm install </span><span class="pull-right"><i class="fa fa-clone fa-fw fa-lg" ng-click="copy('copy3')" data-toggle="tooltip" data-placement="right" title="copiar"></i></span></pre>
-                </li>
-                <li>Execute o comando
-                    <pre class="prestyle"><span id="copy4">npm run dev</span><span class="pull-right"><i class="fa fa-clone fa-fw fa-lg" ng-click="copy('copy4')" data-toggle="tooltip" data-placement="right" title="copiar"></i></span></pre>
-                </li>
-            </ol>
-            <p class="small">
-                Essa mesma interface será aberta localmente em sua máquina.
-            </p>
-        </div>
-    </div>
-
-    <div class="section" id="sec-criando-componente">
-        <span class="banner">Criando Componente</span>
-        <div class="text text-muted">
-            <p class="subtopic orange">Criando Componente</p>
-            <p>
-                Para criar o componente <span class="indianred small destaque"><i>novocomponente</i></span>, crie uma diretório dentro da pasta <span class="indianred small destaque">/components</span>.
-            </p>
-            <br>
-            <div class="prestyle">
-                <ul class="ascii">
-                    <li>sandbox/
-                        <ul>
-                            <li>app/
-                                <ul>
-                                    <li>components/
-                                        <ul class="indianred">
-                                            <li>novocomponente
-                                                <ul>
-                                                    <li>controller/</li>
-                                                    <li>directive/</li>
-                                                    <li>service/</li>
-                                                    <li>novocomponente.module.js</li>
-                                                </ul>
-                                            </li>
-                                        </ul>
-                                    </li>
-                                    <li>styles/</li>
-                                    <li>views/</li>
-                                    <li>app.module.js</li>
-                                </ul>
-                            </li>
-                        </ul>
+        <div class="section" id="sec-como-utilizar" ng-show="isComoUtilizar">
+            <span class="banner">Como Utilizar</span>
+            <div class="text text-muted">
+                <p class="subtopic orange">Instalação</p>
+                <p>
+                    Os componentes podem ser baixados através do <span class="lobster"><a href="https://github.com/brunocarneiro312/spread-core-frontend" target="_blank">github <i class="fa fa-github-alt fa-fw"></i></a></span>.
+                </p>
+                <p>
+                    Para clonar o repositório, siga os seguintes passos:
+                </p>
+                <ol class="steplist">
+                    <li>Entre no prompt de comandos do Windows e navegue até o diretório onde o projeto será baixado
+                        <pre class="prestyle">(<i class="fa fa-windows fa-fw"></i> + r) <span id="copy1">cmd.exe</span><span class="pull-right" data-toggle="tooltip" data-placement="right" title="copiar"><i class="fa fa-clone fa-fw fa-lg" ng-click="copy('copy1')"></i></span></pre>
                     </li>
-                </ul>
+                    <li>Digite o comando:
+                        <pre class="prestyle"><span id="copy2">git clone https://github.com/brunocarneiro312/spread-core-frontend.git</span><span class="pull-right" data-toggle="tooltip" data-placement="right" title="copiar"><i class="fa fa-clone fa-fw fa-lg" ng-click="copy('copy2')"></i></span></pre>
+                    </li>
+                    <li>Após clonar o repositório, é necessário instalar as dependências:
+                        <pre class="prestyle"><span id="copy3">npm install </span><span class="pull-right"><i class="fa fa-clone fa-fw fa-lg" ng-click="copy('copy3')" data-toggle="tooltip" data-placement="right" title="copiar"></i></span></pre>
+                    </li>
+                    <li>Execute o comando
+                        <pre class="prestyle"><span id="copy4">npm run dev</span><span class="pull-right"><i class="fa fa-clone fa-fw fa-lg" ng-click="copy('copy4')" data-toggle="tooltip" data-placement="right" title="copiar"></i></span></pre>
+                    </li>
+                </ol>
+                <p class="small">
+                    Essa mesma interface será aberta localmente em sua máquina.
+                </p>
+            </div>
+        </div>
+
+        <div class="section" id="sec-criando-componente" ng-show="isCriandoComponente">
+            <span class="banner">Criando Componente</span>
+            <div class="text text-muted">
+                <p class="subtopic orange">Criando Componente</p>
+                <p>
+                    Para criar o componente <span class="indianred small destaque"><i>novocomponente</i></span>, crie uma diretório dentro da pasta <span class="indianred small destaque">/components</span>.
+                </p>
+                <br>
+                <div class="prestyle">
+                    <ul class="ascii">
+                        <li>sandbox/
+                            <ul>
+                                <li>app/
+                                    <ul>
+                                        <li>components/
+                                            <ul class="indianred">
+                                                <li>novocomponente
+                                                    <ul>
+                                                        <li>controller/</li>
+                                                        <li>directive/</li>
+                                                        <li>service/</li>
+                                                        <li>novocomponente.module.js</li>
+                                                    </ul>
+                                                </li>
+                                            </ul>
+                                        </li>
+                                        <li>styles/</li>
+                                        <li>views/</li>
+                                        <li>app.module.js</li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
             </div>
         </div>
     </div>
-</div>
-<div class="col-md-3 fade-in one">
-    <!--<ul class="sidemenu staatliches">-->
-        <!--<li><a href="#sec-sobre" ng-class="{'link-active': isSobre}">Sobre</a></li>-->
-        <!--<li><a href="#sec-como-utilizar">Como utilizar</a></li>-->
-        <!--<li><a href="#sec-criando-componente">Criando componente</a></li>-->
-    <!--</ul>-->
+    <div class="col-md-3 fade-in one">
+        <ul class="sidemenu staatliches">
+            <li><a href="" ng-class="{'link-active': isSobre}" ng-click="display('sobre')">Sobre</a></li>
+            <li><a href="" ng-class="{'link-active': isComoUtilizar}" ng-click="display('comoUtilizar')">Como utilizar</a></li>
+            <li><a href="" ng-class="{'link-active': isCriandoComponente}" ng-click="display('criandoComponente')">Criando componente</a></li>
+        </ul>
+    </div>
 </div>

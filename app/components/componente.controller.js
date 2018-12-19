@@ -14,7 +14,7 @@
 
         function init()
         {
-            $scope.isAccordion = true;
+            console.log('ComponenteController');
         }
         init();
     }

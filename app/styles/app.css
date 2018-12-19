@@ -93,11 +93,10 @@ pre .fa-clone:hover {
     text-decoration: none;
 }
 .section {
-    margin: 50px 0;
     font-size: 0.9em;
 }
 .section:first-child {
-    margin-top: 0;
+
 }
 .lobster {
     font-family: 'Lobster', cursive;
@@ -118,6 +117,14 @@ pre .fa-clone:hover {
 }
 .steplist li pre {
     margin: 10px;
+}
+.ul-no-style {
+    list-style-type: none;
+}
+.ul-no-style li:before {
+    font-style: normal;
+    font-weight: normal;
+    content: ' - ';
 }
 @-webkit-keyframes fadeIn {
     from {

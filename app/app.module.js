@@ -15,17 +15,13 @@
         $routeProvider
             .when("/", {
                 templateUrl: 'views/inicio.html',
-                controller: 'HomeController'
+                controller: 'InicioController'
             })
             .when("/componentes", {
                 templateUrl: 'views/componentes.html',
-                controller: 'HomeController'
+                controller: 'ComponenteController'
             })
-            .when("/interfaces", {
-                templateUrl: 'views/interfaces.html',
-                controller: 'HomeController'
-            })
-            .otherwise("/");
+            .otherwise('/');
     });
 
 })();

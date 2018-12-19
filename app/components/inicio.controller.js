@@ -7,11 +7,9 @@
     function InicioController($scope, $timeout)
     {
         // Variáveis
-        $scope.showView             = undefined;
-        $scope.isSobre              = undefined;
+        $scope.isSobre              = true;
         $scope.isComoUtilizar       = undefined;
         $scope.isCriandoComponentes = undefined;
-        $scope.onload               = true;
 
         // Funções
         $scope.copy = copy;
@@ -21,26 +19,6 @@
             $scope.isSobre = true;
         }
         init();
-
-        function display(section)
-        {
-            $scope.isSobre             = false;
-            $scope.isComoUtilizar      = false;
-            $scope.isCriandoComponente = false;
-
-            if (section.toLowerCase() === 'sobre')
-            {
-                $scope.isSobre = true;
-            }
-            if (section.toLowerCase() === 'comoutilizar')
-            {
-                $scope.isComoUtilizar = true;
-            }
-            if (section.toLowerCase() === 'criandocomponente')
-            {
-                $scope.isCriandoComponente = true;
-            }
-        }
 
         /**
          * ------------------------------------------

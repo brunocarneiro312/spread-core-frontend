@@ -1,12 +1,12 @@
 <div class="col-md-9 fade-in one">
-    <div class="section" id="sec-sobre" ng-show="isSobre">
+    <div class="section" id="sec-sobre">
         <span class="banner">Componentes</span>
         <div class="text text-muted">
             <p>Frontend</p>
             <p>
                 Os componentes de tela desenvolvidos utilizam as seguintes tecnologias:
             </p>
-            <ul>
+            <ul class="ul-no-style">
                 <li>EcmaScript6 (Javascript)</li>
                 <li>AngularJS</li>
                 <li>HTML5</li>
@@ -53,9 +53,9 @@
     </div>
 
 </div>
-<div class="col-md-3 fade-in one">
+<div class="col-md-3 fade-in one" ng-controller="HomeController">
     <ul class="sidemenu staatliches">
-        <li><a href="" ng-class="{'link-active': isAccordion}" ng-click="display('accordion')">Accordion</a></li>
+        <li><a href="" ng-click="display('accordion')">Accordion</a></li>
         <li><a href="" ng-click="display('carousel')">Carousel</a></li>
         <li><a href="" ng-click="display('modal')">Modal</a></li>
         <li><a href="" ng-click="display('overlay')">Overlay</a></li>
