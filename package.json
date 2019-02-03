@@ -9,6 +9,9 @@
   "keywords": [],
   "author": "",
   "license": "ISC",
+  "dependencies": {
+    "minimatch": ">=3.0.2"
+  },
   "devDependencies": {
     "minimatch": ">=3.0.2",
     "angular": "^1.7.3",
