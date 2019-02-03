@@ -193,6 +193,13 @@ pre .fa-clone:hover {
 .big {
     font-size: 1.4em;
 }
+.number {
+    padding: 0 15px !important;
+    font-family: 'Staatliches', cursive;
+}
+.number::after {
+    content: 'º'
+}
 .destaque {
     background: #f5f5f5;
     margin: 0 5px;

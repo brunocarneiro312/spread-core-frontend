@@ -1,64 +1,76 @@
-<div class="col-md-9 fade-in one">
-    <div class="section" id="sec-sobre">
-        <span class="banner">Componentes</span>
-        <div class="text text-muted">
-            <p>Frontend</p>
-            <p>
-                Os componentes de tela desenvolvidos utilizam as seguintes tecnologias:
-            </p>
-            <ul class="ul-no-style">
-                <li>EcmaScript6 (Javascript)</li>
-                <li>AngularJS</li>
-                <li>HTML5</li>
-                <li>CSS3</li>
-            </ul>
-            <p>
-                Os componentes desenvolvidos podem utilizar as tecnologias acima mencionadas em conjunto
-                ou de forma isolada.
-            </p>
-        </div>
-    </div>
-
-    <!-- Spread Accordion -->
-    <div class="section" id="component-accordion" ng-show="isSobre">
-        <span class="banner"></span>
-        <div class="text text-muted">
-            <p class="lobster orange big">Accordion</p>
-            <p>
-                O componente <span class="orange lobster">Accordion</span> é um componente estilo "porta sanfonada".
-                Quando um item é selecionado, os demais são minimizados.
-            </p>
-            <div class="prestyle">
-                <spread-accordion>
-                    <spread-accordion-element></spread-accordion-element>
-                </spread-accordion>
+<div ng-controller="HomeController">
+    <div class="col-md-9 fade-in one">
+        <div class="section" id="sec-sobre">
+            <span class="banner">Componentes</span>
+            <div class="text text-muted">
+                <p>Frontend</p>
+                <p>
+                    Os componentes de tela desenvolvidos utilizam as seguintes tecnologias:
+                </p>
+                <ul class="ul-no-style">
+                    <li>EcmaScript6 (Javascript)</li>
+                    <li>AngularJS</li>
+                    <li>HTML5</li>
+                    <li>CSS3</li>
+                </ul>
+                <p>
+                    Os componentes desenvolvidos podem utilizar as tecnologias acima mencionadas em conjunto
+                    ou de forma isolada.
+                </p>
             </div>
         </div>
-    </div>
 
-    <!-- Spread Overlay -->
-    <div class="section" id="component-overlay" ng-show="true">
-        <span class="banner"></span>
-        <div class="text text-muted">
-            <p class="lobster orange big">Overlay</p>
-            <p>
-                O componente <span class="orange lobster">Overlay</span> é um componente estilo "cortina".
-                Quando utilizado como um elemento HTML, é adicionado ao body, preenchendo toda a tela.
-                Quando utilizado com um atributo, o elemento o qual recebeu o atribulo será preenchido.
-            </p>
-            <div class="prestyle">
-                <spread-overlay isOverlay="false"></spread-overlay>
+        <!-- Spread Accordion -->
+        <div class="section" id="component-accordion" ng-show="isSobre">
+            <div class="text text-muted">
+                <p class="lobster orange big">Accordion</p>
+                <p>
+                    O componente <span class="orange lobster">Accordion</span> é um componente estilo "porta sanfonada".
+                    Quando um item é selecionado, os demais são minimizados.
+                </p>
+                <div class="prestyle">
+                    <spread-accordion>
+                        <spread-accordion-element></spread-accordion-element>
+                    </spread-accordion>
+                </div>
             </div>
         </div>
-    </div>
 
-</div>
-<div class="col-md-3 fade-in one" ng-controller="HomeController">
-    <ul class="sidemenu staatliches">
-        <li><a href="" ng-click="display('accordion')">Accordion</a></li>
-        <li><a href="" ng-click="display('carousel')">Carousel</a></li>
-        <li><a href="" ng-click="display('modal')">Modal</a></li>
-        <li><a href="" ng-click="display('overlay')">Overlay</a></li>
-        <li><a href="" ng-click="display('table')">Table</a></li>
-    </ul>
+        <!-- Spread Overlay -->
+        <div class="section" id="component-overlay" ng-show="isOverlay">
+            <span class="banner"></span>
+            <div class="text text-muted">
+                <p class="lobster orange big">Overlay</p>
+                <p>
+                    O componente <span class="orange lobster">Overlay</span> é um componente estilo "cortina".
+                    Quando utilizado como um elemento HTML, é adicionado ao body, preenchendo toda a tela.
+                    Quando utilizado com um atributo, o elemento o qual recebeu o atribulo será preenchido.
+                </p>
+                <div class="prestyle">
+                    <spread-overlay isOverlay="false"></spread-overlay>
+                </div>
+            </div>
+        </div>
+
+        <div class="setcion" id="component-file" ng-show="isFile">
+            <div class="text text-muded">
+                <p class="lobster orange big">File</p>
+                <p>
+                    O componente <span class="orange lobster">File</span> é um componente para <i>download</i> e
+                    <i>upload de arquivos</i>
+                </p>
+            </div>
+        </div>
+
+    </div>
+    <div class="col-md-3 fade-in one">
+        <ul class="sidemenu staatliches">
+            <li><a href="" ng-click="display('accordion')">Accordion</a></li>
+            <li><a href="" ng-click="display('carousel')">Carousel</a></li>
+            <li><a href="" ng-click="display('modal')">Modal</a></li>
+            <li><a href="" ng-click="display('overlay')">Overlay</a></li>
+            <li><a href="" ng-click="display('table')">Table</a></li>
+            <li><a href="" ng-click="display('file')">File</a></li>
+        </ul>
+    </div>
 </div>
