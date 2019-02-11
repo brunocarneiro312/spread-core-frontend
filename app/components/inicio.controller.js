@@ -4,8 +4,8 @@
     angular.module('sandbox.module')
         .controller('InicioController', InicioController);
 
-    function InicioController($scope, $timeout)
-    {
+    function InicioController($scope, $timeout) {
+
         // Variáveis
         $scope.isSobre              = true;
         $scope.isComoUtilizar       = undefined;
@@ -14,8 +14,7 @@
         // Funções
         $scope.copy = copy;
 
-        function init()
-        {
+        function init() {
             $scope.isSobre = true;
         }
         init();
@@ -26,8 +25,7 @@
          * ------------------------------------------
          * @param id: id do componente
          */
-        function copy(id)
-        {
+        function copy(id) {
             var copyText = document.getElementById(id);
             var textarea = document.createElement("textarea");
             textarea.value = copyText.textContent;

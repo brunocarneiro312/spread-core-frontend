@@ -14,28 +14,23 @@
         $scope.isSelected = isSelected;
         $scope.debug      = debug;
 
-        function init()
-        {
-            if ($scope.debug)
-            {
+        function init() {
+            if ($scope.debug) {
                 $scope.itens.push('menu1', 'menu2', 'menu3');
             }
         }
         init();
 
-        function toggle(listItem)
-        {
+        function toggle(listItem) {
             $scope.selectedElement = listItem;
         }
 
-        function isSelected(listItem)
-        {
+        function isSelected(listItem) {
             return $scope.selectedElement === listItem;
         }
 
-        function debug()
-        {
-            console.log('OK');
+        function debug() {
+
         }
     }
 })();

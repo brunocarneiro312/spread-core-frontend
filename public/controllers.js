@@ -59,8 +59,8 @@
     angular.module('sandbox.module')
         .controller('InicioController', InicioController);
 
-    function InicioController($scope, $timeout)
-    {
+    function InicioController($scope, $timeout) {
+
         // Variáveis
         $scope.isSobre              = true;
         $scope.isComoUtilizar       = undefined;
@@ -69,8 +69,7 @@
         // Funções
         $scope.copy = copy;
 
-        function init()
-        {
+        function init() {
             $scope.isSobre = true;
         }
         init();
@@ -81,8 +80,7 @@
          * ------------------------------------------
          * @param id: id do componente
          */
-        function copy(id)
-        {
+        function copy(id) {
             var copyText = document.getElementById(id);
             var textarea = document.createElement("textarea");
             textarea.value = copyText.textContent;
@@ -110,28 +108,23 @@
         $scope.isSelected = isSelected;
         $scope.debug      = debug;
 
-        function init()
-        {
-            if ($scope.debug)
-            {
+        function init() {
+            if ($scope.debug) {
                 $scope.itens.push('menu1', 'menu2', 'menu3');
             }
         }
         init();
 
-        function toggle(listItem)
-        {
+        function toggle(listItem) {
             $scope.selectedElement = listItem;
         }
 
-        function isSelected(listItem)
-        {
+        function isSelected(listItem) {
             return $scope.selectedElement === listItem;
         }
 
-        function debug()
-        {
-            console.log('OK');
+        function debug() {
+
         }
     }
 })();
